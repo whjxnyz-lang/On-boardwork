@@ -43,7 +43,7 @@ def bubbleSort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
 # 将in.txt文件读取到arry
-file = open("in.txt")
+file = open("./input/in.txt")
 array = []
 count = 0
 for line in file:
@@ -54,7 +54,7 @@ file.close()
 array.pop(0)
 bubbleSort(array)
 print('排序后的输出')
-file_name = 'out.dat'
+file_name = './output/out.dat'
 # 将输出写入out.dat
 with open(file_name, 'w') as file_obj:
     #先清空文件
